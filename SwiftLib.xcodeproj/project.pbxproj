@@ -14,6 +14,12 @@
 		DB18348022B87754007F5D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB18347E22B87754007F5D67 /* LaunchScreen.storyboard */; };
 		DB18348B22B87754007F5D67 /* SwiftLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18348A22B87754007F5D67 /* SwiftLibTests.swift */; };
 		DB18349622B87754007F5D67 /* SwiftLibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18349522B87754007F5D67 /* SwiftLibUITests.swift */; };
+		DB1834A722B8786B007F5D67 /* ED_BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1834A622B8786B007F5D67 /* ED_BasicViewController.swift */; };
+		DB1834AB22B8B6CD007F5D67 /* normal_back_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1834A922B8B6CD007F5D67 /* normal_back_btn@2x.png */; };
+		DB1834AC22B8B6CD007F5D67 /* normal_back_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1834AA22B8B6CD007F5D67 /* normal_back_btn@3x.png */; };
+		DB1834AF22B8C1F8007F5D67 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1834AE22B8C1F8007F5D67 /* TestViewController.swift */; };
+		DB1834B222B8CB57007F5D67 /* ED_BasicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1834B122B8CB57007F5D67 /* ED_BasicModel.swift */; };
+		DB1834B422B8D93E007F5D67 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1834B322B8D93E007F5D67 /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		DB18349122B87754007F5D67 /* SwiftLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB18349522B87754007F5D67 /* SwiftLibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibUITests.swift; sourceTree = "<group>"; };
 		DB18349722B87754007F5D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1834A622B8786B007F5D67 /* ED_BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ED_BasicViewController.swift; sourceTree = "<group>"; };
+		DB1834A922B8B6CD007F5D67 /* normal_back_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "normal_back_btn@2x.png"; sourceTree = "<group>"; };
+		DB1834AA22B8B6CD007F5D67 /* normal_back_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "normal_back_btn@3x.png"; sourceTree = "<group>"; };
+		DB1834AE22B8C1F8007F5D67 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		DB1834B122B8CB57007F5D67 /* ED_BasicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ED_BasicModel.swift; sourceTree = "<group>"; };
+		DB1834B322B8D93E007F5D67 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,12 @@
 		DB18347422B87753007F5D67 /* SwiftLib */ = {
 			isa = PBXGroup;
 			children = (
-				DB18347522B87753007F5D67 /* AppDelegate.swift */,
+				DB1834AD22B8BB73007F5D67 /* Test */,
+				DB1834A422B877FC007F5D67 /* MyLib */,
+				DB1834A322B877C9007F5D67 /* Supporting Files */,
 				DB18347722B87753007F5D67 /* ViewController.swift */,
 				DB18347922B87753007F5D67 /* Main.storyboard */,
-				DB18347C22B87754007F5D67 /* Assets.xcassets */,
 				DB18347E22B87754007F5D67 /* LaunchScreen.storyboard */,
-				DB18348122B87754007F5D67 /* Info.plist */,
 			);
 			path = SwiftLib;
 			sourceTree = "<group>";
@@ -123,6 +135,60 @@
 				DB18349722B87754007F5D67 /* Info.plist */,
 			);
 			path = SwiftLibUITests;
+			sourceTree = "<group>";
+		};
+		DB1834A322B877C9007F5D67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB18348122B87754007F5D67 /* Info.plist */,
+				DB18347C22B87754007F5D67 /* Assets.xcassets */,
+				DB18347522B87753007F5D67 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB1834A422B877FC007F5D67 /* MyLib */ = {
+			isa = PBXGroup;
+			children = (
+				DB1834A522B8781F007F5D67 /* BaseObject */,
+			);
+			path = MyLib;
+			sourceTree = "<group>";
+		};
+		DB1834A522B8781F007F5D67 /* BaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				DB1834B022B8CB16007F5D67 /* MyBaseModel */,
+				DB1834A822B8B6B4007F5D67 /* MyBaseViewController */,
+			);
+			path = BaseObject;
+			sourceTree = "<group>";
+		};
+		DB1834A822B8B6B4007F5D67 /* MyBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB1834A922B8B6CD007F5D67 /* normal_back_btn@2x.png */,
+				DB1834AA22B8B6CD007F5D67 /* normal_back_btn@3x.png */,
+				DB1834A622B8786B007F5D67 /* ED_BasicViewController.swift */,
+			);
+			path = MyBaseViewController;
+			sourceTree = "<group>";
+		};
+		DB1834AD22B8BB73007F5D67 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DB1834AE22B8C1F8007F5D67 /* TestViewController.swift */,
+				DB1834B322B8D93E007F5D67 /* TestModel.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		DB1834B022B8CB16007F5D67 /* MyBaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB1834B122B8CB57007F5D67 /* ED_BasicModel.swift */,
+			);
+			path = MyBaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1834AC22B8B6CD007F5D67 /* normal_back_btn@3x.png in Resources */,
 				DB18348022B87754007F5D67 /* LaunchScreen.storyboard in Resources */,
 				DB18347D22B87754007F5D67 /* Assets.xcassets in Resources */,
 				DB18347B22B87753007F5D67 /* Main.storyboard in Resources */,
+				DB1834AB22B8B6CD007F5D67 /* normal_back_btn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB18347822B87753007F5D67 /* ViewController.swift in Sources */,
+				DB1834A722B8786B007F5D67 /* ED_BasicViewController.swift in Sources */,
+				DB1834AF22B8C1F8007F5D67 /* TestViewController.swift in Sources */,
+				DB1834B422B8D93E007F5D67 /* TestModel.swift in Sources */,
 				DB18347622B87753007F5D67 /* AppDelegate.swift in Sources */,
+				DB1834B222B8CB57007F5D67 /* ED_BasicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68USQN444E;
-				INFOPLIST_FILE = SwiftLib/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftLib/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68USQN444E;
-				INFOPLIST_FILE = SwiftLib/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftLib/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
