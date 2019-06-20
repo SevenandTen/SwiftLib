@@ -12,5 +12,5 @@ class TestModel: ED_BasicModel {
     @objc var name :String!
     var age : Int!
     var schoolName :String!
-
+  
 }

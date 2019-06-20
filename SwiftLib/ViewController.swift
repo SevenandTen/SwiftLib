@@ -18,16 +18,10 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let test = TestModel.init(dic: ["name":"石崎崎"])
-        if test.name != nil {
-            print(test.name!)
-        }else {
-            print("五")
-        }
-        
-        print(test.age ?? 0)
-        print(test.schoolName ?? "")
+     
         
     }
+    
     
 }
 
