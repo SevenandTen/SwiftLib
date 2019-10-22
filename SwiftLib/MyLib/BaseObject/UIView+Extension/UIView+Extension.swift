@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+extension UIView { // 实例 和刷新方法
     public func refresh(obj :Any){
         
     }
@@ -48,5 +48,38 @@ extension UIView {
         return NSStringFromClass(self)
     }
 }
+
+extension UIView {  //nib 配置
+    
+     
+    @IBInspectable var  ibCordRadius : CGFloat {
+        get {
+            return self.layer.cornerRadius
+        }
+        set {
+            self.layer.cornerRadius = newValue
+        }
+    }
+    
+    @IBInspectable var ibBorderWidth :CGFloat {
+        get {
+            return self.layer.borderWidth;
+        }
+        set {
+            self.layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var ibBorderColor : UIColor {
+        get {
+            return UIColor.init(cgColor: self.layer.borderColor!)
+        }
+        set {
+            self.layer.borderColor = newValue.cgColor
+        }
+    }
+    
+}
+
 
 
