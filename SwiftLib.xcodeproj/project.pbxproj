@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB00022C235ED3F600CE7A56 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB00022B235ED3F600CE7A56 /* UIView+Extension.swift */; };
 		DB18347622B87753007F5D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18347522B87753007F5D67 /* AppDelegate.swift */; };
 		DB18347822B87753007F5D67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18347722B87753007F5D67 /* ViewController.swift */; };
 		DB18347B22B87753007F5D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB18347922B87753007F5D67 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB00022B235ED3F600CE7A56 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		DB18347222B87753007F5D67 /* SwiftLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB18347522B87753007F5D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB18347722B87753007F5D67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB00022A235ED3D300CE7A56 /* UIView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB00022B235ED3F600CE7A56 /* UIView+Extension.swift */,
+			);
+			path = "UIView+Extension";
+			sourceTree = "<group>";
+		};
 		DB18346922B87753007F5D67 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 		DB1834A522B8781F007F5D67 /* BaseObject */ = {
 			isa = PBXGroup;
 			children = (
+				DB00022A235ED3D300CE7A56 /* UIView+Extension */,
 				DB1834B022B8CB16007F5D67 /* MyBaseModel */,
 				DB1834A822B8B6B4007F5D67 /* MyBaseViewController */,
 			);
@@ -325,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB18347822B87753007F5D67 /* ViewController.swift in Sources */,
+				DB00022C235ED3F600CE7A56 /* UIView+Extension.swift in Sources */,
 				DB1834A722B8786B007F5D67 /* ED_BasicViewController.swift in Sources */,
 				DB1834AF22B8C1F8007F5D67 /* TestViewController.swift in Sources */,
 				DB1834B422B8D93E007F5D67 /* TestModel.swift in Sources */,
